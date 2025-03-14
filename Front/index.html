@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VibesFind - Music Player</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Barra de pesquisa -->
+    <div class="search-area">
+      <input type="text" id="searchInput" placeholder="Conte seus sentimentos...">
+      <div class="emoji-buttons">
+        <button class="emoji" data-emoji="😡">😡</button>
+        <button class="emoji" data-emoji="😢">😢</button>
+        <button class="emoji" data-emoji="😊">😊</button>
+        <button class="emoji" data-emoji="😆">😆</button>
+        <button class="emoji" data-emoji="😍">😍</button>
+      </div>
+      <button id="searchButton">🔍</button>
+    </div>
+
+    <div class="content">
+      <!-- Lista de resultados -->
+      <div id="results" class="results-list"></div>
+      
+      <!-- Player de música -->
+      <div id="music-player" class="player">
+        <img id="cover" src="" alt="Capa do álbum">
+        <h2 id="song-title">Selecione uma música</h2>
+        <h3 id="artist">Artista</h3>
+        <iframe id="youtube-player" src="" allowfullscreen></iframe>
+        
+        <!-- Controles do player -->
+        <div class="controls">
+          <button id="prev">⏮️</button>
+          <button id="play">▶️</button>
+          <button id="next">⏭️</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
